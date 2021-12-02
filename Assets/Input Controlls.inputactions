@@ -1,0 +1,74 @@
+{
+    "name": "Input Controlls",
+    "maps": [
+        {
+            "name": "Input",
+            "id": "06c6984f-542d-4c52-97d2-3a5b8552166e",
+            "actions": [
+                {
+                    "name": "Drag",
+                    "type": "Value",
+                    "id": "a94596d4-41b8-44d1-a305-27d676ac85b7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "998da8b9-7dc4-40ec-b4ae-b89b642197d7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "91fd7b57-5def-4b7a-80b6-65db58e3f431",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c92de16-f2d9-49a3-854e-590e59b63629",
+                    "path": "<Touchscreen>/touch0/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea99c095-3ec5-4651-83ad-5af5fb2c48ac",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93ddffdb-3d54-45a7-ada7-eff63d1f98cf",
+                    "path": "<Touchscreen>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
