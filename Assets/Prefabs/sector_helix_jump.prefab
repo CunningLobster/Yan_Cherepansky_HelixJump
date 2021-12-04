@@ -113,7 +113,8 @@ MonoBehaviour:
   goodMaterial: {fileID: 2100000, guid: a8d4767185af9ea4d8f600e4096e4e69, type: 2}
   badMaterial: {fileID: 2100000, guid: 52ac4ade739cfc04398d99de4f532067, type: 2}
   isBad: 0
-  crushVector: {x: 0, y: -1, z: -100}
+  crushVector: {x: 0, y: 4, z: 20}
+  angularVelocity: {x: 50, y: 0, z: 0}
 --- !u!54 &6025214297901487708
 Rigidbody:
   m_ObjectHideFlags: 0

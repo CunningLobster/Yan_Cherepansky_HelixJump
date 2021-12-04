@@ -10,8 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed;
     public float Speed => speed;
     public Rigidbody Rb => rb;
-
-    bool isBounced;
+    [SerializeField] private Vector3 maxVelocity;
 
     void Awake()
     {
@@ -19,22 +18,22 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (rb.velocity.y < 0)
-        { 
-            isBounced = false;
-        }
+        CheckVelocity();
+    }
+
+    private void CheckVelocity()
+    {
+        float dot = Vector3.Dot(rb.velocity.normalized, maxVelocity.normalized);
+        if (rb.velocity.sqrMagnitude >= maxVelocity.sqrMagnitude && dot > .7f)
+            rb.velocity = maxVelocity;
     }
 
     public void Bounce()
     {
-        if (isBounced) return;
-        isBounced = true;
-
         audioSource.Play();
-        rb.velicity = Vector3.zero;
-        rb.AddForce(Vector3.up * speed, ForceMode.VelocityChange);
+        rb.velocity = Vector3.up * speed;
     }
 
     public void Die()

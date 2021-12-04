@@ -10,6 +10,7 @@ public class Sector : MonoBehaviour
     [SerializeField] Material badMaterial;
     [SerializeField] bool isBad;
     [SerializeField] Vector3 crushVector;
+    [SerializeField] Vector3 angularVelocity;
 
     Rigidbody rb;
 
@@ -17,8 +18,6 @@ public class Sector : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         UpdateMaterial();
-        crushVector = transform.InverseTransformPoint(crushVector);
-
     }
 
     private void UpdateMaterial()
@@ -43,7 +42,8 @@ public class Sector : MonoBehaviour
     public void Crush()
     {
         rb.constraints = RigidbodyConstraints.None;
-        rb.AddForce(crushVector, ForceMode.Impulse);
+        rb.AddForce(transform.forward * crushVector.z - transform.up * crushVector.y, ForceMode.Impulse);
+        rb.angularVelocity = angularVelocity;
         Destroy(gameObject, 1f);
     }
 

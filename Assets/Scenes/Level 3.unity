@@ -5980,6 +5980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game
       objectReference: {fileID: 0}
+    - target: {fileID: 1045053922446113542, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5202978357663955716, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.7071067

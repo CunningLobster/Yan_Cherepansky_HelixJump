@@ -1245,6 +1245,10 @@ PrefabInstance:
       propertyPath: bounce
       value: 
       objectReference: {fileID: 8300000, guid: c410c6eda328c4b4eaa21bac01a65f68, type: 3}
+    - target: {fileID: 1045053922446113543, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: maxVelocity.y
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 8892633409902702816, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_audioClip
       value: 
