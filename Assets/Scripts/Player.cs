@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody rb;
+    AudioSource audioSource;
 
     [SerializeField] private float speed;
     public float Speed => speed;
@@ -12,8 +13,9 @@ public class Player : MonoBehaviour
 
     bool isBounced;
 
-    void Start()
+    void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour
     {
         if (isBounced) return;
         isBounced = true;
+
+        audioSource.Play();
         rb.AddForce(Vector3.up * speed, ForceMode.VelocityChange);
     }
 

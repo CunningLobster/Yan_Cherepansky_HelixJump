@@ -9,10 +9,16 @@ public class Sector : MonoBehaviour
     [SerializeField] Material goodMaterial;
     [SerializeField] Material badMaterial;
     [SerializeField] bool isBad;
+    [SerializeField] Vector3 crushVector;
+
+    Rigidbody rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         UpdateMaterial();
+        crushVector = transform.InverseTransformPoint(crushVector);
+
     }
 
     private void UpdateMaterial()
@@ -32,6 +38,13 @@ public class Sector : MonoBehaviour
             player.Bounce();
         else
             FindObjectOfType<Game>().OnPlayerDied();
+    }
+
+    public void Crush()
+    {
+        rb.constraints = RigidbodyConstraints.None;
+        rb.AddForce(crushVector, ForceMode.Impulse);
+        Destroy(gameObject, 1f);
     }
 
     private void OnValidate()
