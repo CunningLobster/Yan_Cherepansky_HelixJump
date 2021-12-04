@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
         isBounced = true;
 
         audioSource.Play();
+        rb.velicity = Vector3.zero;
         rb.AddForce(Vector3.up * speed, ForceMode.VelocityChange);
     }
 
