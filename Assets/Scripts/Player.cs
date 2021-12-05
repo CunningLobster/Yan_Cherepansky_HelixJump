@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     Rigidbody rb;
     AudioSource audioSource;
+    Animator animator;
 
     [SerializeField] private float speed;
     public float Speed => speed;
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
@@ -33,6 +35,12 @@ public class Player : MonoBehaviour
     public void Bounce()
     {
         audioSource.Play();
+        animator.SetTrigger("bounce");
+        Invoke("Jump", .1f);
+    }
+
+    void Jump()
+    {
         rb.velocity = Vector3.up * speed;
     }
 
