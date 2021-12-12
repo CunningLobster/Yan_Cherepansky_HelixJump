@@ -21,12 +21,18 @@ public class Player : MonoBehaviour
     float timer = 0;
     [SerializeField]float dissolveTime;
 
+    [SerializeField] ParticleSystem deathEffect;
+    ParticleSystem.MainModule deathMain;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         renderer = body.GetComponent<Renderer>();
+
+        deathMain = deathEffect.main;
+        deathMain.duration = dissolveTime;
     }
 
     private void FixedUpdate()
@@ -76,6 +82,9 @@ public class Player : MonoBehaviour
         timer += Time.deltaTime;
 
         renderer.material.SetFloat("Vector1_41d25d5831ab4ddda30512922c552c28", value);
+
+        deathEffect.gameObject.SetActive(true);
+
     }
 
     public void ReachFinish()

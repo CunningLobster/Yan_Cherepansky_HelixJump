@@ -11,12 +11,6 @@
         },
         {
             "m_Id": "2ddc2f638a7444778b3326c46908501b"
-        },
-        {
-            "m_Id": "4991dbc5724e4291b972dab2cbcbf9d4"
-        },
-        {
-            "m_Id": "453ca36f50e244248456094c55004785"
         }
     ],
     "m_Keywords": [],
@@ -437,52 +431,6 @@
         "g": 0.0,
         "b": 0.0,
         "a": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "453ca36f50e244248456094c55004785",
-    "m_Guid": {
-        "m_GuidSerialized": "3d648024-92d7-4fce-8376-57828c0ef80a"
-    },
-    "m_Name": "Offset",
-    "m_DefaultReferenceName": "Vector1_453ca36f50e244248456094c55004785",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 1.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "4991dbc5724e4291b972dab2cbcbf9d4",
-    "m_Guid": {
-        "m_GuidSerialized": "0beccb67-685a-475a-b6c8-77b9e2b0b2fd"
-    },
-    "m_Name": "Tilling",
-    "m_DefaultReferenceName": "Vector1_4991dbc5724e4291b972dab2cbcbf9d4",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": -1.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
