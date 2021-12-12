@@ -7,6 +7,7 @@ public class Platform : MonoBehaviour
     [SerializeField] Vector3 cameraPositionOffset;
     ScoreManager scoreManager;
     AudioSource audioSource;
+    new Collider collider;
 
     Sector[] sectors;
 
@@ -15,6 +16,7 @@ public class Platform : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         scoreManager = FindObjectOfType<ScoreManager>();
         sectors = GetComponentsInChildren<Sector>();
+        collider = GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,6 +28,7 @@ public class Platform : MonoBehaviour
         foreach (Sector sector in sectors)
         {
             sector.Crush();
+            collider.enabled = false;
         }
     }
 }

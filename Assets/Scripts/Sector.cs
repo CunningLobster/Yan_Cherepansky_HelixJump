@@ -41,7 +41,8 @@ public class Sector : MonoBehaviour
 
     public void Crush()
     {
-        rb.constraints = RigidbodyConstraints.None;
+        //rb.constraints = RigidbodyConstraints.None;
+        rb.isKinematic = false;
         rb.AddForce(transform.forward * crushVector.z - transform.up * crushVector.y, ForceMode.Impulse);
         rb.angularVelocity = angularVelocity;
         Destroy(gameObject, 1f);
