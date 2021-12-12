@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     AudioSource audioSource;
     Animator animator;
     [SerializeField] GameObject body;
+    public GameObject Body => body;
     new Renderer renderer;
 
     [SerializeField] private float speed;
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] ParticleSystem deathEffect;
     ParticleSystem.MainModule deathMain;
+    [SerializeField] ParticleSystem winEffect;
 
     void Awake()
     {
@@ -90,6 +92,9 @@ public class Player : MonoBehaviour
     public void ReachFinish()
     {
         rb.velocity = Vector3.zero;
+        rb.isKinematic = true;
+        body.GetComponent<MeshRenderer>().enabled = false;
+        winEffect.gameObject.SetActive(true);
         Debug.Log("Player Wins");
     }
 }

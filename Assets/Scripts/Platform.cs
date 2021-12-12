@@ -5,6 +5,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     [SerializeField] Vector3 cameraPositionOffset;
+    [SerializeField] ParticleSystem crushEffect;
     ScoreManager scoreManager;
     AudioSource audioSource;
     new Collider collider;
@@ -28,6 +29,7 @@ public class Platform : MonoBehaviour
         foreach (Sector sector in sectors)
         {
             sector.Crush();
+            crushEffect.gameObject.SetActive(true);
             collider.enabled = false;
         }
     }
