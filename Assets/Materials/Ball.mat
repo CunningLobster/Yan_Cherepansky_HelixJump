@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rod
-  m_Shader: {fileID: -6465566751694194690, guid: 80b6da3dcaf9aba4b94d59261b75c316, type: 3}
+  m_Name: Ball
+  m_Shader: {fileID: -6465566751694194690, guid: 4c063e3f20522ae4fb6339a946e5c89b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_89f3f4aa03124126bd66a21adc43433c:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -36,8 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_2ddc2f638a7444778b3326c46908501b: 1
-    - Vector1_9bea04f2b5eb4d94b443349733e80e69: 9.6
+    - Vector1_41d25d5831ab4ddda30512922c552c28: -0.2
     m_Colors:
-    - Color_2619af8acb1c48368192c8635b5d71d3: {r: 2.3174946, g: 0.24923983, b: 1.3212677, a: 0}
+    - Color_4172faf12d49458090f943bd43b7ef35: {r: 0.1715698, g: 0.090494804, b: 0.7735849, a: 0}
   m_BuildTextureStacks: []

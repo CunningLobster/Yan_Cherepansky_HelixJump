@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _HorizonLineContribution: 0.425
+    - _HorizonLineContribution: 0
     - _HorizonLineExponent: 4.86
     - _SkyGradientExponent: 5.6
     - _SunDiscContribution: 1

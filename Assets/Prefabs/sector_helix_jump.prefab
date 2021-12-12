@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a8d4767185af9ea4d8f600e4096e4e69, type: 2}
+  - {fileID: 2100000, guid: 949adfa094f364644987b61bc83fb86f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a141dd6a851744b1c62d10efd5ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodMaterial: {fileID: 2100000, guid: a8d4767185af9ea4d8f600e4096e4e69, type: 2}
-  badMaterial: {fileID: 2100000, guid: 52ac4ade739cfc04398d99de4f532067, type: 2}
+  goodMaterial: {fileID: 2100000, guid: 949adfa094f364644987b61bc83fb86f, type: 2}
+  badMaterial: {fileID: 2100000, guid: 6ac5bcf5913039e4191b7f6db9ef0c3d, type: 2}
   isBad: 0
   crushVector: {x: 0, y: 4, z: 20}
   angularVelocity: {x: 50, y: 0, z: 0}

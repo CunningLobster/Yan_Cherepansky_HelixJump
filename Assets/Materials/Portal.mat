@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_New Shader Graph 1
-  m_Shader: {fileID: -6465566751694194690, guid: 1dbbecb83c80aa04cab59b2f47eb9f79, type: 3}
+  m_Name: Portal
+  m_Shader: {fileID: -6465566751694194690, guid: 271230b1c24124f4d994253295c3ee19, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_07e6c78ec5d54997ac9a99640c2d2add:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -32,7 +36,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_d6a9a69761b646eea3d3647aa3876b68: 0.5
+    - Vector1_1a609e241370457e94dac85e355a1784: 0.34
+    - Vector1_7357aaaa9a644e4d809ee9c3ae38bff2: 6.05
+    - Vector1_9d65ead568a34e5d97983457f19b9026: 14.5
+    - Vector1_e27f51f10f4643839dcd3d2f162cf857: 1
     m_Colors:
-    - Color_977064d70d9c43df94c690682c1e67b3: {r: 1, g: 0, b: 0, a: 0}
+    - Color_ab827ad04d4a4eb78be065b321849982: {r: 191.74902, g: 8.031373, b: 110.43137, a: 0}
   m_BuildTextureStacks: []
