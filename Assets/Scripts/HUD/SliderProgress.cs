@@ -1,34 +1,35 @@
 using Player;//TO FIX
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderProgress : MonoBehaviour
+namespace HUD
 {
-    PlayerController player;
-    Finish finish;
-    Slider slider;
-
-    float distanceToFinish;
-    float startY;
-    float finishY;
-    float currentY;
-    void Awake()
+    public class SliderProgress : MonoBehaviour
     {
-        player = FindObjectOfType<PlayerController>();
-        finish = FindObjectOfType<Finish>();
-        slider = GetComponent<Slider>();
+        PlayerController player;
+        Finish finish;
+        Slider slider;
 
-        distanceToFinish = Vector3.Distance(player.transform.position, finish.transform.position);
-        startY = player.transform.position.y;
-        finishY = player.transform.position.y - distanceToFinish;
+        float distanceToFinish;
+        float startY;
+        float finishY;
+        float currentY;
 
-    }
+        void Awake()
+        {
+            player = FindObjectOfType<PlayerController>();
+            finish = FindObjectOfType<Finish>();
+            slider = GetComponent<Slider>();
 
-    void Update()
-    {
-        currentY = Mathf.Min(currentY, player.transform.position.y);
-        slider.value = Mathf.InverseLerp(startY, finishY, currentY);
+            distanceToFinish = Vector3.Distance(player.transform.position, finish.transform.position);
+            startY = player.transform.position.y;
+            finishY = player.transform.position.y - distanceToFinish;
+        }
+
+        void Update()
+        {
+            currentY = Mathf.Min(currentY, player.transform.position.y);
+            slider.value = Mathf.InverseLerp(startY, finishY, currentY);
+        }
     }
 }

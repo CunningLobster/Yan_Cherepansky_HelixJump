@@ -4,21 +4,24 @@ using UnityEngine;
 using TMPro;
 using Core; //Check If Possible To Refuse
 
-public class ScoreIndicator : MonoBehaviour
+namespace HUD
 {
-    ScoreManager scoreManager;
-    [SerializeField] TMP_Text currentScoreText;
-    [SerializeField] TMP_Text bestScoreText;
-
-    private void Awake()
+    public class ScoreIndicator : MonoBehaviour
     {
-        scoreManager = FindObjectOfType<ScoreManager>();
+        ScoreManager scoreManager;
+        [SerializeField] TMP_Text currentScoreText;
+        [SerializeField] TMP_Text bestScoreText;
 
-        bestScoreText.text = $"BEST: {ScoreManager.BestScore}";
-    }
+        private void Awake()
+        {
+            scoreManager = FindObjectOfType<ScoreManager>();
 
-    private void Update()
-    {
-        currentScoreText.text = scoreManager.CurrentScore.ToString();
+            bestScoreText.text = $"BEST: {ScoreManager.BestScore}";
+        }
+
+        private void Update()
+        {
+            currentScoreText.text = scoreManager.CurrentScore.ToString();
+        }
     }
 }
