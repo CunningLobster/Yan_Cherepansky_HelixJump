@@ -1,3 +1,4 @@
+using Player;//TO FIX
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 public class SliderProgress : MonoBehaviour
 {
-    Player player;
+    PlayerController player;
     Finish finish;
     Slider slider;
 
@@ -15,7 +16,7 @@ public class SliderProgress : MonoBehaviour
     float currentY;
     void Awake()
     {
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<PlayerController>();
         finish = FindObjectOfType<Finish>();
         slider = GetComponent<Slider>();
 

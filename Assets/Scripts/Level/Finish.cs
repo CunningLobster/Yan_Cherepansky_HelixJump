@@ -6,7 +6,7 @@ public class Finish : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.TryGetComponent(out Player player)) return;
+        if (!collision.gameObject.CompareTag("Player")) return;
         FindObjectOfType<Game>().OnPlayerFinished();
     }
 }

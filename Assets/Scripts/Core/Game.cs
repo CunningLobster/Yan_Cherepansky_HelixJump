@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Player; //TO FIX
 
 public class Game : MonoBehaviour
 {
-    Player player;
-    Controlls controlls;
+    PlayerController player;
+    PlayerInput controlls;
 
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] GameObject levelPassedScreen;
 
     private void Awake()
     {
-        player = FindObjectOfType<Player>();
-        controlls = FindObjectOfType<Controlls>();
+        player = FindObjectOfType<PlayerController>();
+        controlls = FindObjectOfType<PlayerInput>();
     }
 
     public void OnPlayerDied()

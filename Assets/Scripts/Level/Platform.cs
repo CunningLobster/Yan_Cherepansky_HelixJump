@@ -24,7 +24,7 @@ public class Platform : MonoBehaviour
     {
         if (!other.gameObject.CompareTag("Player")) { return; }
         audioSource.Play();
-        CameraFollow.isFalling = true;
+        //CameraFollow.isFalling = true;
         scoreManager.AddScore();
         foreach (Sector sector in sectors)
         {

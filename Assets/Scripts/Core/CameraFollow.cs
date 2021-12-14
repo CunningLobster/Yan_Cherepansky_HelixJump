@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public static bool isFalling;
-    Rigidbody rb;
+    [SerializeField] Rigidbody playerRb;
+    [SerializeField] Vector3 cameraOffset;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        transform.position = playerRb.position + cameraOffset;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (isFalling)
-            rb.velocity = new Vector3(rb.velocity.x, FindObjectOfType<Player>().Rb.velocity.y, rb.velocity.z);
-        else
-            rb.velocity = Vector3.zero;
+        transform.position = Vector3.Min(transform.position, playerRb.position + cameraOffset); 
+    }
+
+    private void OnValidate()
+    {
+        transform.position = playerRb.position + cameraOffset;
     }
 }
+

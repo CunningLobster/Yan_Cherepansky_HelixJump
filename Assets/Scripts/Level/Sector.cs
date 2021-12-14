@@ -1,3 +1,4 @@
+using Player;//TO FIX
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,9 +30,9 @@ public class Sector : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (Vector3.Dot(-collision.contacts[0].normal.normalized, Vector3.up) < .7f) return;
-        if (!collision.gameObject.TryGetComponent(out Player player)) return;
+        if (!collision.gameObject.TryGetComponent(out PlayerController player)) return;
 
-        CameraFollow.isFalling = false;
+        //CameraFollow.isFalling = false;
 
         if (!isBad)
             player.Bounce();
