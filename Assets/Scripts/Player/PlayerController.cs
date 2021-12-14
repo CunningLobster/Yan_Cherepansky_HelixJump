@@ -28,6 +28,8 @@ namespace Player
         ParticleSystem.MainModule deathMain;
         [SerializeField] ParticleSystem winEffect;
 
+        PlayerInput input;
+
         void Awake()
         {
             animator = GetComponent<Animator>();
@@ -37,6 +39,7 @@ namespace Player
 
             deathMain = deathEffect.main;
             deathMain.duration = dissolveTime;
+            input = GetComponent<PlayerInput>();
         }
 
         private void FixedUpdate()
@@ -77,6 +80,8 @@ namespace Player
             rb.velocity = Vector3.zero;
             Debug.Log("Player is Dead");
             isDead = true;
+
+            input.enabled = false;
         }
 
         void Dissolve()
@@ -98,6 +103,8 @@ namespace Player
             body.GetComponent<MeshRenderer>().enabled = false;
             winEffect.gameObject.SetActive(true);
             Debug.Log("Player Wins");
+
+            input.enabled = false;
         }
     }
 }

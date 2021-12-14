@@ -1,44 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Player; //TO FIX
+using UnityEngine.Events;
 
-public class Game : MonoBehaviour
+namespace Core
 {
-    PlayerController player;
-    PlayerInput controlls;
-
-    [SerializeField] GameObject gameOverScreen;
-    [SerializeField] GameObject levelPassedScreen;
-
-    private void Awake()
+    public class Game : MonoBehaviour
     {
-        player = FindObjectOfType<PlayerController>();
-        controlls = FindObjectOfType<PlayerInput>();
-    }
+        [SerializeField] public UnityEvent OnPlayerDied;
+        [SerializeField] public UnityEvent OnPlayerFinished;
 
-    public void OnPlayerDied()
-    {
-        player.Die();
-        controlls.enabled = false;
-        gameOverScreen.SetActive(true);
-    }
+        public void RestartLevel()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-    public void OnPlayerFinished()
-    {
-        player.ReachFinish();
-        controlls.enabled = false;
-        levelPassedScreen.SetActive(true);
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void LoadNextLevel()
-    { 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        public void LoadNextLevel()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

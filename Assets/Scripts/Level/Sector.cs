@@ -2,6 +2,7 @@ using Player;//TO FIX
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
 public class Sector : MonoBehaviour
 {
@@ -13,12 +14,14 @@ public class Sector : MonoBehaviour
     [SerializeField] Vector3 crushVector;
     [SerializeField] Vector3 angularVelocity;
 
+    Game game;
     Rigidbody rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         UpdateMaterial();
+        game = FindObjectOfType<Game>();
     }
 
     private void UpdateMaterial()
@@ -37,7 +40,7 @@ public class Sector : MonoBehaviour
         if (!isBad)
             player.Bounce();
         else
-            FindObjectOfType<Game>().OnPlayerDied();
+            game.OnPlayerDied?.Invoke();
     }
 
     public void Crush()

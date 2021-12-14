@@ -2,24 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+namespace Core
 {
-    [SerializeField] Rigidbody playerRb;
-    [SerializeField] Vector3 cameraOffset;
-
-    private void Awake()
+    public class CameraFollow : MonoBehaviour
     {
-        transform.position = playerRb.position + cameraOffset;
-    }
+        [SerializeField] Rigidbody playerRb;
+        [SerializeField] Vector3 cameraOffset;
 
-    void FixedUpdate()
-    {
-        transform.position = Vector3.Min(transform.position, playerRb.position + cameraOffset); 
-    }
+        private void Awake()
+        {
+            transform.position = playerRb.position + cameraOffset;
+        }
 
-    private void OnValidate()
-    {
-        transform.position = playerRb.position + cameraOffset;
+        void FixedUpdate()
+        {
+            transform.position = Vector3.Min(transform.position, playerRb.position + cameraOffset);
+        }
+
+        private void OnValidate()
+        {
+            transform.position = playerRb.position + cameraOffset;
+        }
     }
 }
 

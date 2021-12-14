@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+namespace Core
 {
-    int currentScore;
-    static int bestScore = 0;
-
-    public int CurrentScore => currentScore;
-    public static int BestScore => bestScore;
-
-    public void AddScore()
+    public class ScoreManager : MonoBehaviour
     {
-        currentScore += 10;
+        int currentScore;
+        static int bestScore = 0;
 
-        if (bestScore < currentScore)
-            bestScore = currentScore;
+        public int CurrentScore => currentScore;
+        public static int BestScore => bestScore;
+
+        public void AddScore()
+        {
+            currentScore += 10;
+
+            if (bestScore < currentScore)
+                bestScore = currentScore;
+        }
     }
 }
