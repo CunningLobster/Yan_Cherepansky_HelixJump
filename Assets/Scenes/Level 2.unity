@@ -768,6 +768,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadNextLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 4564464210720010389, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4564464210819552514, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -890,7 +894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Game, Assembly-CSharp
+      value: Core.SceneLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2501,6 +2505,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game
       objectReference: {fileID: 0}
+    - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 539863943}
+    - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: levelPassedScreen
+      value: 
+      objectReference: {fileID: 539863942}
     - target: {fileID: 6908613344071739686, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05531645
@@ -2522,12 +2534,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2221482465867301091 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8416219869501118589, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
   m_PrefabInstance: {fileID: 2221482465867301089}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa5341e71dbbf44aa2658b2506750b1, type: 3}
+  m_Script: {fileID: 11500000, guid: e0b48e2f16b8a5743a138d460aa12b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

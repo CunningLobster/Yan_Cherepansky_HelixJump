@@ -156,7 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7757c606f1a5d544ae053c41d2499f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPositionOffset: {x: 0, y: 4, z: -14.6}
   crushEffect: {fileID: 7636327490370929951}
 --- !u!1 &5354014340893867179
 GameObject:

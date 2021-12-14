@@ -588,6 +588,11 @@ PrefabInstance:
       objectReference: {fileID: 1045053922664500958}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
+--- !u!1 &1045053922446113563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6896096665652803241, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
+  m_PrefabInstance: {fileID: 5851051540440862130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1045053922446113562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6896096665652803240, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
@@ -603,12 +608,43 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6896096665652803253, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
   m_PrefabInstance: {fileID: 5851051540440862130}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1045053922446113563}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8736ec1025aa8104faf12b215c1a85c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1045053920940964132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6896096664741377174, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
+  m_PrefabInstance: {fileID: 5851051540440862130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &95630590301579466 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5791809319690102136, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
+  m_PrefabInstance: {fileID: 5851051540440862130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1891410918420124269 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5407899930910056415, guid: 96d76d194279db44b8d2783a9ba32b50, type: 3}
+  m_PrefabInstance: {fileID: 5851051540440862130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &783302625153975863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045053922446113563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63eeaeff92d30d64ca2ba0b79e215ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1045053920940964132}
+  dissolveTime: 3
+  deathEffect: {fileID: 95630590301579466}
+  winEffect: {fileID: 1891410918420124269}
 --- !u!1001 &6986834449089429964
 PrefabInstance:
   m_ObjectHideFlags: 0

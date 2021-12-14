@@ -282,7 +282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_LocalScale.x
@@ -903,6 +903,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca809eda83af5247817ca71b6342289, type: 3}
+--- !u!114 &148007475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8416219869501118589, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+  m_PrefabInstance: {fileID: 2221482465867301089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b48e2f16b8a5743a138d460aa12b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &159191674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1285,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_LocalScale.x
@@ -1651,7 +1662,11 @@ PrefabInstance:
     - target: {fileID: 4564464210720010389, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2060955031}
+      objectReference: {fileID: 148007475}
+    - target: {fileID: 4564464210720010389, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4564464210819552514, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1749,9 +1764,45 @@ PrefabInstance:
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2060955031}
+      objectReference: {fileID: 148007475}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core.SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
 --- !u!1 &539863942 stripped
@@ -2484,7 +2535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_LocalScale.x
@@ -3763,7 +3814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_LocalScale.x
@@ -4061,7 +4112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6409377353225721414, guid: bca809eda83af5247817ca71b6342289, type: 3}
       propertyPath: m_LocalScale.x
@@ -4560,11 +4611,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca809eda83af5247817ca71b6342289, type: 3}
---- !u!1 &1829510714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1045053922446113563, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-  m_PrefabInstance: {fileID: 2221482465867301089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1833064045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5090,17 +5136,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca809eda83af5247817ca71b6342289, type: 3}
---- !u!114 &2060955031 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-  m_PrefabInstance: {fileID: 2221482465867301089}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa5341e71dbbf44aa2658b2506750b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2070682489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5448,38 +5483,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 539863943}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: levelPassedScreen
-      value: 
-      objectReference: {fileID: 539863942}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: OnPlayerDied.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: OnPlayerDied.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: OnPlayerDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1829510714}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: OnPlayerDied.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045053922283412216, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: OnPlayerDied.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1045053922283412217, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_Name
       value: Game
       objectReference: {fileID: 0}
+    - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 539863943}
+    - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: levelPassedScreen
+      value: 
+      objectReference: {fileID: 539863942}
     - target: {fileID: 1883314053628979082, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -5492,6 +5507,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5904155103964194869, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: finishScreen
+      value: 
+      objectReference: {fileID: 539863942}
+    - target: {fileID: 5904155103964194869, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 539863943}
+    - target: {fileID: 5904155103964194869, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
+      propertyPath: levelPassedScreen
+      value: 
+      objectReference: {fileID: 539863942}
     - target: {fileID: 6908613344071739686, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05531645
