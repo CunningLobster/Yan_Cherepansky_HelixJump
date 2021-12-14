@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 namespace Core
@@ -8,15 +7,5 @@ namespace Core
     {
         [SerializeField] public UnityEvent OnPlayerDied;
         [SerializeField] public UnityEvent OnPlayerFinished;
-
-        public void RestartLevel()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        public void LoadNextLevel()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
     }
 }

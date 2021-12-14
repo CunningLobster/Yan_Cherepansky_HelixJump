@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Core
 {
-    public class ScreenManager : MonoBehaviour
+    public class ScreenActivator : MonoBehaviour
     {
         [SerializeField] GameObject gameOverScreen;
         [SerializeField] GameObject levelPassedScreen;
