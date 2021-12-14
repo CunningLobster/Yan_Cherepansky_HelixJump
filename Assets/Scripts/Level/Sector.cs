@@ -1,59 +1,57 @@
-using Player;//TO FIX
-using System.Collections;
-using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using Core;
 
-public class Sector : MonoBehaviour
+namespace Level
 {
-    new Renderer renderer;
-
-    [SerializeField] Material goodMaterial;
-    [SerializeField] Material badMaterial;
-    [SerializeField] bool isBad;
-    [SerializeField] Vector3 crushVector;
-    [SerializeField] Vector3 angularVelocity;
-
-    Game game;
-    Rigidbody rb;
-
-    private void Awake()
+    public class Sector : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody>();
-        UpdateMaterial();
-        game = FindObjectOfType<Game>();
-    }
+        new Renderer renderer;
 
-    private void UpdateMaterial()
-    {
-        renderer = GetComponent<Renderer>();
-        renderer.sharedMaterial = isBad ? badMaterial : goodMaterial;
-    }
+        [SerializeField] Material goodMaterial;
+        [SerializeField] Material badMaterial;
+        [SerializeField] bool isBad;
+        [SerializeField] Vector3 crushVector;
+        [SerializeField] Vector3 angularVelocity;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (Vector3.Dot(-collision.contacts[0].normal.normalized, Vector3.up) < .7f) return;
-        if (!collision.gameObject.TryGetComponent(out PlayerController player)) return;
+        Game game;
+        Rigidbody rb;
 
-        //CameraFollow.isFalling = false;
+        private void Awake()
+        {
+            rb = GetComponent<Rigidbody>();
+            UpdateMaterial();
+            game = FindObjectOfType<Game>();
+        }
 
-        if (!isBad)
-            player.Bounce();
-        else
-            game.OnPlayerDied?.Invoke();
-    }
+        private void UpdateMaterial()
+        {
+            renderer = GetComponent<Renderer>();
+            renderer.sharedMaterial = isBad ? badMaterial : goodMaterial;
+        }
 
-    public void Crush()
-    {
-        //rb.constraints = RigidbodyConstraints.None;
-        rb.isKinematic = false;
-        rb.AddForce(transform.forward * crushVector.z - transform.up * crushVector.y, ForceMode.Impulse);
-        rb.angularVelocity = angularVelocity;
-        Destroy(gameObject, 1f);
-    }
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (Vector3.Dot(-collision.contacts[0].normal.normalized, Vector3.up) < .7f) return;
+            if (!collision.gameObject.TryGetComponent<PlayerController>(out PlayerController player)) return;
 
-    private void OnValidate()
-    {
-        UpdateMaterial();
+            if (!isBad)
+                player.Bounce();
+            else
+                game.OnPlayerDied?.Invoke();
+        }
+
+        public void Crush()
+        {
+            rb.isKinematic = false;
+            rb.AddForce(transform.forward * crushVector.z - transform.up * crushVector.y, ForceMode.Impulse);
+            rb.angularVelocity = angularVelocity;
+            Destroy(gameObject, 1f);
+        }
+
+        private void OnValidate()
+        {
+            UpdateMaterial();
+        }
     }
 }

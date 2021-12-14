@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicPlayer : Singleton<MusicPlayer>
+namespace Sound
 {
+    public class MusicPlayer : Singleton<MusicPlayer>
+    {
 
+    }
 }
