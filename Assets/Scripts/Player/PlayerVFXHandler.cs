@@ -29,7 +29,6 @@ namespace Player
         {
             while (timer <= dissolveTime)
             {
-                Debug.Log(timer);
                 float value = Mathf.Lerp(minDissolveValue, maxDissolveValue, timer / dissolveTime);
                 timer += Time.deltaTime;
 
