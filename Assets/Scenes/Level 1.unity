@@ -199,6 +199,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2235556508883195080, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464210347736993, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4564464210720010389, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -306,6 +314,10 @@ PrefabInstance:
     - target: {fileID: 4564464210946123206, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564464210971917594, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4564464211044070143, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1164,11 +1176,11 @@ PrefabInstance:
     - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: gameOverScreen
       value: 
-      objectReference: {fileID: 1096665298}
+      objectReference: {fileID: 0}
     - target: {fileID: 1710501870429227360, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: levelPassedScreen
       value: 
-      objectReference: {fileID: 1041835202}
+      objectReference: {fileID: 0}
     - target: {fileID: 5968791749436365043, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
       propertyPath: m_IsTrigger
       value: 0
