@@ -179,7 +179,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e91f3310c030854c8afc6bd85993c17, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 717741e42135d524d889dc964b605795, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -353,12 +353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8736ec1025aa8104faf12b215c1a85c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 6896096664741377174}
   speed: 11
   maxVelocity: {x: 0, y: -30, z: 0}
-  dissolveTime: 3
-  deathEffect: {fileID: 5791809319690102136}
-  winEffect: {fileID: 5407899930910056415}
 --- !u!1001 &7310997190217961636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -423,11 +419,6 @@ PrefabInstance:
 --- !u!4 &3256520149721373241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5207457386156608157, guid: 0e52fe7a8ff2e834ba9a85110b27359d, type: 3}
-  m_PrefabInstance: {fileID: 7310997190217961636}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5407899930910056415 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3348806067685609339, guid: 0e52fe7a8ff2e834ba9a85110b27359d, type: 3}
   m_PrefabInstance: {fileID: 7310997190217961636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9015201182701681031
@@ -530,10 +521,5 @@ PrefabInstance:
 --- !u!4 &3838898764657042591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5213742990275435800, guid: 6dc7177855237b64d9be76ab1785c538, type: 3}
-  m_PrefabInstance: {fileID: 9015201182701681031}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &5791809319690102136 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3277721496968076543, guid: 6dc7177855237b64d9be76ab1785c538, type: 3}
   m_PrefabInstance: {fileID: 9015201182701681031}
   m_PrefabAsset: {fileID: 0}

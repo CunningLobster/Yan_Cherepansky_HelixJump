@@ -199,10 +199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2235556508883195080, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4564464210347736993, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -214,10 +210,6 @@ PrefabInstance:
     - target: {fileID: 4564464210720010389, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Core.SceneLoader, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564464210739360032, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
-      propertyPath: m_Value
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4564464210819552514, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -318,10 +310,6 @@ PrefabInstance:
     - target: {fileID: 4564464210971917594, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4564464211044070143, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 324.95
       objectReference: {fileID: 0}
     - target: {fileID: 4564464211625944856, guid: 47fb595ebc222c944839054a36a11edf, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1233,10 +1221,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8892633409902702816, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0e91f3310c030854c8afc6bd85993c17, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10299a686bd003a448dcfd3824b25aa0, type: 3}
 --- !u!4 &1045053921774622392 stripped
